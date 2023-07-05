@@ -4,6 +4,7 @@
   "description": "WhatsApp API using baileys",
   "main": "index.js",
   "bin": "index.js",
+  "engines":{"node":"16.x"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
