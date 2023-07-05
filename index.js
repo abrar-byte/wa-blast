@@ -15,7 +15,7 @@ const io = socketIO(server)
 app.use(express.json())
 app.use("/assets", express.static(__dirname + "/client/assets"))
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   res.sendFile("./client/index.html", {
     root: __dirname,
   })
