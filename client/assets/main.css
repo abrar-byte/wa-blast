@@ -116,6 +116,15 @@ body {
   margin: 0 auto;
   max-width: 860px;
 }
+#imageContainer {
+  margin-top: 20px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
 
 header {
   text-align: left;

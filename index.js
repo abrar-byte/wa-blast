@@ -119,12 +119,12 @@ io.on("connection", async (socket) => {
 app.post("/send-message", async (req, res) => {
   const message = req.body.message
   const number = req.body.number
-
+  const image=req.body.image
   if (connected) {
     wa.onWhatsApp(number)
       .then(data => {
         if (data[0]?.jid) {
-          sendMessageWTyping(wa, { text: message }, data[0].jid)
+          sendMessageWTyping(wa, { caption: message,image:{url:image}}, data[0].jid)
             .then((result) => {
               res.status(200).json({
                 status: true,

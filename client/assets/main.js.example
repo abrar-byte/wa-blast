@@ -3,13 +3,13 @@
 // console.log('%cvisit me on https://afarhansib.github.io/', 'font-weight: bold; font-size: 20px;color: black; text-shadow: 1px 1px 0px #fc0 , -1px -1px 0px white')
 
 var firebaseConfig = {
-  apiKey: "AIzaSyDu3v6pkF23un4hWDfCAmChbdi0ZO_8zas",
-  authDomain: "wa-api-5fa1e.firebaseapp.com",
-  projectId: "wa-api-5fa1e",
-  storageBucket: "wa-api-5fa1e.appspot.com",
-  messagingSenderId: "1038798117398",
-  appId: "1:1038798117398:web:2b97218ed6a7884b843337",
-  measurementId: "G-6QFCJ32HMX",
+  apiKey: "xxx",
+  authDomain: "xxx",
+  projectId: "xxx",
+  storageBucket: "xxx",
+  messagingSenderId: "xxxx",
+  appId: "xxx",
+  measurementId: "xxxx",
 };
 
 firebase.initializeApp(firebaseConfig);

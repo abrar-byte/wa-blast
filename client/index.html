@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Wabill</title>
+	<title>Wabill Modification</title>
 	<meta name="description" content="Kirim tagihan melalui WhatsApp secara otomatis.">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 	<link rel="icon" type="image/svg" href="./assets/icon.svg" />
@@ -161,7 +161,7 @@
 				</div>
 			</div>
 		</div>
-		<p>Kirim tagihan (atau pesan apapun) melalui WhatsApp secara otomatis.</p>
+		<p>Kirim berbagai pesan melalui WhatsApp secara otomatis.</p>
 	</header>
 	<div class="scan hidden">
 		<script>
@@ -235,8 +235,8 @@
 										dengan nomor utama aman aman saja)</li>
 									<li>Scan kode QR berikut dengan aplikasi WhatsApp anda, sebagaimana Whatsapp Web biasanya.</li>
 									<li>Gunakan dengan bijak.</li>
-									<li><b>Dukung pengembangan aplikasi ini dengan donasi ke <a href="https://wa.me/6281233745324/">Saya
-												:)</a></b></li>
+									<!-- <li><b>Dukung pengembangan aplikasi ini dengan donasi ke <a href="https://wa.me/6281233745324/">Saya
+												:)</a></b></li> -->
 								</ol>
 							</div>
 						</div>
@@ -328,9 +328,13 @@
 						<div class="pull-tab"></div>
 						<textarea id="template" placeholder="Masukkan template pesan anda di sini"></textarea>
 					</div>
+					<input type="file"  id="fileUpload" accept="image/*">
+					<button class="outline" style="margin-top: 10px;" onclick="uploadImage()" id="uploadButton">Upload</button>
+					<div id="imageContainer" style="margin-top: 5px;"></div>
 					<div class="footer">
 						<div></div>
 						<button id="preview" onclick="previewMessage()">preview</button>
+					
 					</div>
 				</div>
 			</div>
@@ -339,8 +343,13 @@
 	<footer>
 		<p title="dibuat pada 5 Maret 2021 - ">dibuat dengan <span>&hearts;</span> oleh <a
 				href="https://afarhansib.github.io">afarhansib</a></p>
+				<p >dimodifikasi oleh <a
+					href="https://github.com/abrar-byte">usamah</a></p>
 	</footer>
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
 	<script src="./assets/main.js"></script>
+
 </body>
 
 </html>
