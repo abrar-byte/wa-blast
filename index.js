@@ -158,6 +158,6 @@ app.post("/send-message", async (req, res) => {
   }
 })
 
-// server.listen(port, () => {
-//   console.log(`Aplikasi berjalan di http://localhost:${port}`)
-// })
+server.listen(port, () => {
+  console.log(`Aplikasi berjalan di http://localhost:${port}`)
+})
