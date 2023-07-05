@@ -69,7 +69,7 @@ async function connectToWhatsApp() {
   const { state, saveCreds } = await useMultiFileAuthState('wabill_session')
   const waSock = makeWASocket({
     version: [2,2323,4],
-    printQRInTerminal: true,
+    printQRInTerminal: false,
     browser: ["Wabill", "Chrome", "1.2.0"],
     auth: state,
     logger: pino({
@@ -158,6 +158,6 @@ app.post("/send-message", async (req, res) => {
   }
 })
 
-server.listen(port, () => {
-  console.log(`Aplikasi berjalan di http://localhost:${port}`)
-})
+// server.listen(port, () => {
+//   console.log(`Aplikasi berjalan di http://localhost:${port}`)
+// })
