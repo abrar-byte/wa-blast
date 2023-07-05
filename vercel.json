@@ -3,7 +3,7 @@
     "name":"Wabill Modification",
     "builds":[
         {
-            "src":"./index.js",
+            "src":"./gindex.js",
             "use":"@vercel/node"
         }
     ],
